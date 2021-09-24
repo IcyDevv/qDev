@@ -27,6 +27,7 @@ async def post(ctx,jobtype,aboutjob,*,payment):
     author = ctx.message.author
     file = open("posts.txt", "a+")
     file.write(str(author)+" : "+jobtype+aboutjob+payment+"n/")
+    str
     embed = discord.Embed(
         title = "Job Post",
         description = "offered by..",
@@ -39,13 +40,15 @@ async def post(ctx,jobtype,aboutjob,*,payment):
     embed.add_field(name = "About the job", value = aboutjob)
     embed.add_field(name = "Payment", value = payment)
     await ctx.send("Job Post Submitted!")
-    channel = bot.get_channel(878265905816170597)
+    channel = bot.get_channel(val)
     message = await channel.send(embed=embed)
     await message.add_reaction('❤️')
     await message.add_reaction('🔒')
+    if client.
 
+    
 
 
 keep_alive()
-token = ("ODkwNTk1ODM2NTI0OTE2Nzc3.YUyGAQ.MOZY_dob6_Icr_c17ihmTEFs2G8")
+token = ("TOKEN HERE")
 bot.run(token)
